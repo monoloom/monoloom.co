@@ -1,0 +1,78 @@
+/* Define custom properties for colors and transitions */
+:root {
+    --primary-color: #2468ff;
+    --primary-color-darker: #1a4dbd;
+    --text-color: #333;
+    --background-color: #fff;
+    --line-height: 1.8;
+    --transition-duration: 0.2s;
+    --transition-ease: ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: var(--line-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.logo {
+    width: 240px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.intro,
+.future,
+.contact {
+    margin: 20px 0;
+    text-align: left;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.social-links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-links img {
+    width: 24px;
+    margin: 0 10px;
+    opacity: 0.7;
+    filter: hue-rotate(-10deg) brightness(1.1);
+    transition: opacity var(--transition-duration) var(--transition-ease), transform var(--transition-duration) var(--transition-ease);
+}
+
+.social-links img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.contact a {
+    display: inline-block;
+    transition: color var(--transition-duration) var(--transition-ease), transform var(--transition-duration) var(--transition-ease);
+}
+
+.contact a:hover {
+    color: var(--primary-color-darker);
+    transform: scale(1.05);
+}
