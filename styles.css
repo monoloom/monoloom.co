@@ -2,8 +2,8 @@
 :root {
     --primary-color: #2468ff;
     --primary-color-darker: #1a4dbd;
-    --text-color: #333;
-    --background-color: #fff;
+    --text-color: #fff;
+    --background-color: #080808;
     --line-height: 1.8;
     --transition-duration: 0.2s;
     --transition-ease: ease;
@@ -58,7 +58,7 @@ a {
     width: 24px;
     margin: 0 10px;
     opacity: 0.7;
-    filter: hue-rotate(-10deg) brightness(1.1);
+    filter: invert(27%) sepia(92%) saturate(2050%) hue-rotate(215deg) brightness(100%) contrast(102%);
     transition: opacity var(--transition-duration) var(--transition-ease), transform var(--transition-duration) var(--transition-ease);
 }
 
