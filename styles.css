@@ -1,7 +1,7 @@
 /* Define custom properties for colors and transitions */
 :root {
     --primary-color: #2468ff;
-    --primary-color-darker: #1a4dbd;
+    --primary-color-lighter: #468aff;
     --text-color: #fff;
     --background-color: #080808;
     --line-height: 1.8;
@@ -57,13 +57,12 @@ a {
 .social-links img {
     width: 24px;
     margin: 0 10px;
-    opacity: 0.7;
     filter: invert(27%) sepia(92%) saturate(2050%) hue-rotate(215deg) brightness(100%) contrast(102%);
     transition: opacity var(--transition-duration) var(--transition-ease), transform var(--transition-duration) var(--transition-ease);
 }
 
 .social-links img:hover {
-    opacity: 1;
+    filter: invert(45%) sepia(61%) saturate(1051%) hue-rotate(192deg) brightness(100%) contrast(103%);
     transform: scale(1.1);
 }
 
@@ -73,6 +72,6 @@ a {
 }
 
 .contact a:hover {
-    color: var(--primary-color-darker);
+    color: var(--primary-color-lighter);
     transform: scale(1.05);
 }
